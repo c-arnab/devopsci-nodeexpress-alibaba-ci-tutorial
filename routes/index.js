@@ -7,7 +7,7 @@ const http = require('http');
 router.get('/', function(req, res, next) {
   let titletext = '';
   let wtext = '';
-  http.get('http://mywebapi:5000/api/values', (apires) => {
+  http.get('http://mywebapi-svc:5000/api/values', (apires) => {
     const { statusCode } = apires;
     const contentType = apires.headers['content-type'];
   
